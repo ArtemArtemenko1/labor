@@ -2,7 +2,7 @@
 #Дано ціле число, що складається з різних цифр. Визначити, яка з цифр заданого числа більше, тобто знайти найбільшу цифру числа.
 import re
 def check_input(user_input):
-    pattern = r"\d"
+    pattern = r"^-?\d+(.\d+)?$"
     user_input=input()
     while not re.match(pattern,user_input):
         user_input = input("Введене значення некоректне!")
